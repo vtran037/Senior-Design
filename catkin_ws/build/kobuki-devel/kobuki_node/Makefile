@@ -56,6 +56,16 @@ CMAKE_BINARY_DIR = /home/leonardo/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -68,15 +78,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : list_install_components/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -122,17 +133,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/leonardo/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/leonardo/catkin_ws/build/CMakeFiles /home/leonardo/catkin_ws/build/kobuki-devel/kobuki_node/CMakeFiles/progress.marks
@@ -165,99 +165,19 @@ depend:
 	cd /home/leonardo/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
-.PHONY : kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-diagnostic_msgs_generate_messages_nodejs: kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : diagnostic_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_nodejs/fast:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
-.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
-.PHONY : kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-diagnostic_msgs_generate_messages_eus: kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
-
-.PHONY : diagnostic_msgs_generate_messages_eus
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_eus/fast:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
-.PHONY : diagnostic_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
-.PHONY : kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-diagnostic_msgs_generate_messages_cpp: kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : diagnostic_msgs_generate_messages_cpp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_cpp/fast:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
-.PHONY : kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-diagnostic_msgs_generate_messages_py: kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
-
-.PHONY : diagnostic_msgs_generate_messages_py
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_py/fast:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
-.PHONY : diagnostic_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
-.PHONY : kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-diagnostic_msgs_generate_messages_lisp: kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : diagnostic_msgs_generate_messages_lisp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_lisp/fast:
-	cd /home/leonardo/catkin_ws/build && $(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_lisp/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... diagnostic_msgs_generate_messages_nodejs"
-	@echo "... diagnostic_msgs_generate_messages_eus"
-	@echo "... install"
-	@echo "... diagnostic_msgs_generate_messages_cpp"
-	@echo "... diagnostic_msgs_generate_messages_py"
 	@echo "... list_install_components"
-	@echo "... diagnostic_msgs_generate_messages_lisp"
+	@echo "... install"
+	@echo "... rebuild_cache"
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
 .PHONY : help
 
 

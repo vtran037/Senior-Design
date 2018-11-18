@@ -1635,6 +1635,84 @@ _run_tests_gmapping/fast:
 .PHONY : _run_tests_gmapping/fast
 
 #=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_nodejs
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_nodejs
+.PHONY : diagnostic_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
+.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_eus
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_eus
+.PHONY : diagnostic_msgs_generate_messages_eus
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_eus/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+.PHONY : diagnostic_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_cpp
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_cpp
+.PHONY : diagnostic_msgs_generate_messages_cpp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_py
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_py
+.PHONY : diagnostic_msgs_generate_messages_py
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_py/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+.PHONY : diagnostic_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_lisp
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_lisp
+.PHONY : diagnostic_msgs_generate_messages_lisp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make turtlebot-kinetic/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named turtlebot_teleop_joy
+
+# Build rule for target.
+turtlebot_teleop_joy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot_teleop_joy
+.PHONY : turtlebot_teleop_joy
+
+# fast build rule for target.
+turtlebot_teleop_joy/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/build.make turtlebot-kinetic/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/build
+.PHONY : turtlebot_teleop_joy/fast
+
+#=============================================================================
 # Target rules for targets named kobuki_description_xacro_generated_to_devel_space_
 
 # Build rule for target.
@@ -1646,6 +1724,123 @@ kobuki_description_xacro_generated_to_devel_space_: cmake_check_build_system
 kobuki_description_xacro_generated_to_devel_space_/fast:
 	$(MAKE) -f kobuki-devel/kobuki_description/CMakeFiles/kobuki_description_xacro_generated_to_devel_space_.dir/build.make kobuki-devel/kobuki_description/CMakeFiles/kobuki_description_xacro_generated_to_devel_space_.dir/build
 .PHONY : kobuki_description_xacro_generated_to_devel_space_/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_turtlebot_description
+
+# Build rule for target.
+_run_tests_turtlebot_description: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_turtlebot_description
+.PHONY : _run_tests_turtlebot_description
+
+# fast build rule for target.
+_run_tests_turtlebot_description/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description.dir/build.make turtlebot-kinetic/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description.dir/build
+.PHONY : _run_tests_turtlebot_description/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf
+
+# Build rule for target.
+run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf
+.PHONY : run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf
+
+# fast build rule for target.
+run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_description/CMakeFiles/run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf.dir/build.make turtlebot-kinetic/turtlebot_description/CMakeFiles/run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf.dir/build
+.PHONY : run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_turtlebot_description
+
+# Build rule for target.
+run_tests_turtlebot_description: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_turtlebot_description
+.PHONY : run_tests_turtlebot_description
+
+# fast build rule for target.
+run_tests_turtlebot_description/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_description/CMakeFiles/run_tests_turtlebot_description.dir/build.make turtlebot-kinetic/turtlebot_description/CMakeFiles/run_tests_turtlebot_description.dir/build
+.PHONY : run_tests_turtlebot_description/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_turtlebot_description_gtest
+
+# Build rule for target.
+run_tests_turtlebot_description_gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_turtlebot_description_gtest
+.PHONY : run_tests_turtlebot_description_gtest
+
+# fast build rule for target.
+run_tests_turtlebot_description_gtest/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_description/CMakeFiles/run_tests_turtlebot_description_gtest.dir/build.make turtlebot-kinetic/turtlebot_description/CMakeFiles/run_tests_turtlebot_description_gtest.dir/build
+.PHONY : run_tests_turtlebot_description_gtest/fast
+
+#=============================================================================
+# Target rules for targets named turtlebot_description_xacro_generated_to_devel_space_
+
+# Build rule for target.
+turtlebot_description_xacro_generated_to_devel_space_: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot_description_xacro_generated_to_devel_space_
+.PHONY : turtlebot_description_xacro_generated_to_devel_space_
+
+# fast build rule for target.
+turtlebot_description_xacro_generated_to_devel_space_/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/build.make turtlebot-kinetic/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/build
+.PHONY : turtlebot_description_xacro_generated_to_devel_space_/fast
+
+#=============================================================================
+# Target rules for targets named turtlebot_description_test_urdf
+
+# Build rule for target.
+turtlebot_description_test_urdf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot_description_test_urdf
+.PHONY : turtlebot_description_test_urdf
+
+# fast build rule for target.
+turtlebot_description_test_urdf/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/build.make turtlebot-kinetic/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/build
+.PHONY : turtlebot_description_test_urdf/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf
+
+# Build rule for target.
+_run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf
+.PHONY : _run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf
+
+# fast build rule for target.
+_run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf.dir/build.make turtlebot-kinetic/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf.dir/build
+.PHONY : _run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results_turtlebot_description
+
+# Build rule for target.
+clean_test_results_turtlebot_description: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_turtlebot_description
+.PHONY : clean_test_results_turtlebot_description
+
+# fast build rule for target.
+clean_test_results_turtlebot_description/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_description/CMakeFiles/clean_test_results_turtlebot_description.dir/build.make turtlebot-kinetic/turtlebot_description/CMakeFiles/clean_test_results_turtlebot_description.dir/build
+.PHONY : clean_test_results_turtlebot_description/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_turtlebot_description_gtest
+
+# Build rule for target.
+_run_tests_turtlebot_description_gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_turtlebot_description_gtest
+.PHONY : _run_tests_turtlebot_description_gtest
+
+# fast build rule for target.
+_run_tests_turtlebot_description_gtest/fast:
+	$(MAKE) -f turtlebot-kinetic/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/build.make turtlebot-kinetic/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/build
+.PHONY : _run_tests_turtlebot_description_gtest/fast
 
 #=============================================================================
 # Target rules for targets named bump_blink_controller_nodelet
@@ -1685,71 +1880,6 @@ kobuki_safety_controller_nodelet: cmake_check_build_system
 kobuki_safety_controller_nodelet/fast:
 	$(MAKE) -f kobuki-devel/kobuki_safety_controller/CMakeFiles/kobuki_safety_controller_nodelet.dir/build.make kobuki-devel/kobuki_safety_controller/CMakeFiles/kobuki_safety_controller_nodelet.dir/build
 .PHONY : kobuki_safety_controller_nodelet/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_nodejs
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_nodejs
-.PHONY : diagnostic_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
-.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_eus
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_eus
-.PHONY : diagnostic_msgs_generate_messages_eus
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_eus/fast:
-	$(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
-.PHONY : diagnostic_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_cpp
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_cpp
-.PHONY : diagnostic_msgs_generate_messages_cpp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_py
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_py
-.PHONY : diagnostic_msgs_generate_messages_py
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_py/fast:
-	$(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
-.PHONY : diagnostic_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_lisp
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_lisp
-.PHONY : diagnostic_msgs_generate_messages_lisp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make kobuki-devel/kobuki_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named kobuki_ros
@@ -1903,15 +2033,25 @@ help:
 	@echo "... _run_tests_gmapping_rostest_test_basic_localization_stage_replay2.launch"
 	@echo "... gmapping_test_turtlebot.bag"
 	@echo "... _run_tests_gmapping"
-	@echo "... kobuki_description_xacro_generated_to_devel_space_"
-	@echo "... bump_blink_controller_nodelet"
-	@echo "... kobuki_random_walker_nodelet"
-	@echo "... kobuki_safety_controller_nodelet"
 	@echo "... diagnostic_msgs_generate_messages_nodejs"
 	@echo "... diagnostic_msgs_generate_messages_eus"
 	@echo "... diagnostic_msgs_generate_messages_cpp"
 	@echo "... diagnostic_msgs_generate_messages_py"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
+	@echo "... turtlebot_teleop_joy"
+	@echo "... kobuki_description_xacro_generated_to_devel_space_"
+	@echo "... _run_tests_turtlebot_description"
+	@echo "... run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf"
+	@echo "... run_tests_turtlebot_description"
+	@echo "... run_tests_turtlebot_description_gtest"
+	@echo "... turtlebot_description_xacro_generated_to_devel_space_"
+	@echo "... turtlebot_description_test_urdf"
+	@echo "... _run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf"
+	@echo "... clean_test_results_turtlebot_description"
+	@echo "... _run_tests_turtlebot_description_gtest"
+	@echo "... bump_blink_controller_nodelet"
+	@echo "... kobuki_random_walker_nodelet"
+	@echo "... kobuki_safety_controller_nodelet"
 	@echo "... kobuki_ros"
 	@echo "... kobuki_nodelet"
 .PHONY : help

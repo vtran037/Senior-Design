@@ -189,9 +189,9 @@ void SlamGMapping::init()
   map_update_interval_.fromSec(tmp);
   
   // Parameters used by GMapping itself
-  maxUrange_ = 0.0;  maxRange_ = 0.0; // preliminary default, will be set in initMapper()
+  maxUrange_ = 1.0;  maxRange_ = 5.5; // preliminary default, will be set in initMapper()
   if(!private_nh_.getParam("minimumScore", minimum_score_))
-    minimum_score_ = 0;
+    minimum_score_ = 50;
   if(!private_nh_.getParam("sigma", sigma_))
     sigma_ = 0.05;
   if(!private_nh_.getParam("kernelSize", kernelSize_))
@@ -217,11 +217,11 @@ void SlamGMapping::init()
   if(!private_nh_.getParam("stt", stt_))
     stt_ = 0.2;
   if(!private_nh_.getParam("linearUpdate", linearUpdate_))
-    linearUpdate_ = 1.0;
+    linearUpdate_ = 0.2;
   if(!private_nh_.getParam("angularUpdate", angularUpdate_))
-    angularUpdate_ = 0.5;
+    angularUpdate_ = 0.25;
   if(!private_nh_.getParam("temporalUpdate", temporalUpdate_))
-    temporalUpdate_ = -1.0;
+    temporalUpdate_ = 5.0;
   if(!private_nh_.getParam("resampleThreshold", resampleThreshold_))
     resampleThreshold_ = 0.5;
   if(!private_nh_.getParam("particles", particles_))
@@ -235,7 +235,7 @@ void SlamGMapping::init()
   if(!private_nh_.getParam("ymax", ymax_))
     ymax_ = 100.0;
   if(!private_nh_.getParam("delta", delta_))
-    delta_ = 0.05;
+    delta_ = 0.025;
   if(!private_nh_.getParam("occ_thresh", occ_thresh_))
     occ_thresh_ = 0.25;
   if(!private_nh_.getParam("llsamplerange", llsamplerange_))

@@ -482,7 +482,7 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //The directory containing a CMake configuration file for joy.
-joy_DIR:PATH=joy_DIR-NOTFOUND
+joy_DIR:PATH=/opt/ros/kinetic/share/joy/cmake
 
 //The directory containing a CMake configuration file for kdl_conversions.
 kdl_conversions_DIR:PATH=/opt/ros/kinetic/share/kdl_conversions/cmake
@@ -725,6 +725,12 @@ turtlebot_capabilities_BINARY_DIR:STATIC=/home/leonardo/catkin_ws/build/turtlebo
 turtlebot_capabilities_SOURCE_DIR:STATIC=/home/leonardo/catkin_ws/src/turtlebot-kinetic/turtlebot_capabilities
 
 //Value Computed by CMake
+turtlebot_description_BINARY_DIR:STATIC=/home/leonardo/catkin_ws/build/turtlebot-kinetic/turtlebot_description
+
+//Value Computed by CMake
+turtlebot_description_SOURCE_DIR:STATIC=/home/leonardo/catkin_ws/src/turtlebot-kinetic/turtlebot_description
+
+//Value Computed by CMake
 turtlebot_teleop_BINARY_DIR:STATIC=/home/leonardo/catkin_ws/build/turtlebot-kinetic/turtlebot_teleop
 
 //Value Computed by CMake
@@ -856,7 +862,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
