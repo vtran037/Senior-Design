@@ -1,0 +1,8 @@
+prefix=/home/leonardo/catkin_ws/devel
+
+Name: mr_scot
+Description: Description of mr_scot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/leonardo/catkin_ws/devel/lib 
+Requires: 
