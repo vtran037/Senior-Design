@@ -7,7 +7,11 @@
 	<include file="$(find mr_scot)/launch/robot_with_tf.launch">
 		<arg name="scot_name" value="$(arg scot_name)"/>
 	</include>
-
+	
+	<include file="$(find mr_scot)/launch/rplidar.launch">
+		<arg name="scot_name" value="$(arg scot_name)"/>
+	</include>
+	
 </group>
   
 </launch>
