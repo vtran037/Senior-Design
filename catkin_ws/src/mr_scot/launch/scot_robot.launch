@@ -12,6 +12,16 @@
 		<arg name="scot_name" value="$(arg scot_name)"/>
 	</include>
 	
+	<include file="$(find mr_scot)/launch/gmapping.launch">
+		<arg name="scot_name" value="$(arg scot_name)"/>
+	</include>
+
+	
+<include file="$(find mr_scot)/launch/rrt.launch">
+		<arg name="scot_name" value="$(arg scot_name)"/>
+	</include>
+	
+
 </group>
   
 </launch>

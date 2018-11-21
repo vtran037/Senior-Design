@@ -74,10 +74,9 @@
   <exec_depend>slam_gmapping</exec_depend>
   <exec_depend>gmapping</exec_depend>
   <exec_depend>multirobot_map_merge</exec_depend>
-
-<!--
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>rrt_exploration</exec_depend>
+  
+<!--<exec_depend>std_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
