@@ -16,8 +16,11 @@
 		<arg name="scot_name" value="$(arg scot_name)"/>
 	</include>
 
+	<include file="$(find mr_scot)/launch/navigation_stack.launch">
+		<arg name="scot_name" value="$(arg scot_name)"/>
+	</include>
 	
-<include file="$(find mr_scot)/launch/rrt.launch">
+	<include file="$(find mr_scot)/launch/rrt.launch">
 		<arg name="scot_name" value="$(arg scot_name)"/>
 	</include>
 	

@@ -75,17 +75,10 @@
   <exec_depend>gmapping</exec_depend>
   <exec_depend>multirobot_map_merge</exec_depend>
   <exec_depend>rrt_exploration</exec_depend>
-  
-<!--<exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>amcl</exec_depend>
+  <exec_depend>map_server</exec_depend>
+  <exec_depend>move_base</exec_depend>  
+<!--
   <exec_depend>std_msgs</exec_depend>
 -->
 
